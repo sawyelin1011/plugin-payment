@@ -1,7 +1,7 @@
 {
   "id": "payment-core",
   "name": "Payment Core",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Payment processing with balance, Stripe, and PayPal",
   "author": {
     "name": "GSM Flow Team",
