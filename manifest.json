@@ -1,0 +1,42 @@
+{
+  "id": "payment-core",
+  "name": "Payment Core",
+  "version": "1.0.0",
+  "description": "Payment processing with balance, Stripe, and PayPal",
+  "author": {
+    "name": "GSM Flow Team",
+    "email": "support@gsmflow.com",
+    "url": "https://gsmflow.com"
+  },
+  "license": "MIT",
+  "sdkVersion": "^1.0.0",
+  "entry": "https://raw.githubusercontent.com/sawyelin1011/plugin-payment/main/dist/index.js",
+  "extensionPoints": [
+    "checkout.payment",
+    "checkout.method",
+    "billing.webhook",
+    "invoice.generator",
+    "admin.sidebar.item"
+  ],
+  "permissions": ["db.read", "db.write", "payment.process"],
+  "sidebar": {
+    "title": "Payments",
+    "items": [
+      {
+        "label": "Transactions",
+        "href": "/admin/payments/transactions"
+      },
+      {
+        "label": "Payment Methods",
+        "href": "/admin/payments/methods"
+      },
+      {
+        "label": "Invoices",
+        "href": "/admin/payments/invoices"
+      }
+    ]
+  },
+  "signature": "SIGNATURE_PLACEHOLDER",
+  "signedBy": "gsmflow-public-key",
+  "signedAt": "2026-02-20T00:00:00Z"
+}
